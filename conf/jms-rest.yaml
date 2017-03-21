@@ -1,0 +1,29 @@
+inbound:
+  host:MQHOST01
+  port:3434
+  channel:CLIENT.TO.MQ01
+  manager:MQ.MANAGER01
+  queues:MQ.QUEUE.IN
+  threads:2
+  
+outbound:
+  host:MQHOST01
+  port:3434
+  channel:CLIENT.TO.MQ01
+  manager:MQ.MANAGER01
+  queues:MQ.QUEUE.IN
+  threads:1
+  
+local:
+  scheme:http
+  server:localhost
+  port:8080
+  context:/test
+  method:POST
+
+remote:
+  scheme:http
+  server:localhost
+  port:8080
+  context:/test
+  method:POST

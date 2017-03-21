@@ -1,0 +1,29 @@
+inbound:
+  host:MQ_HOST_NAME
+  port:3434
+  channel:CLIENT.TO.HOST
+  manager:MANAGER01
+  queues:QUEUE_IN
+  threads:2
+  
+outbound:
+  host:MQ_HOST_NAME
+  port:3434
+  channel:CLIENT.TO.HOST
+  manager:MANAGER02
+  queues:QUEUE_OUT
+  threads:1
+  
+local:
+  scheme:http
+  server:localhost
+  port:8080
+  context:/test
+  method:PUT
+
+remote:
+  scheme:http
+  server:localhost
+  port:8080
+  context:/test
+  method:PUT
