@@ -59,24 +59,24 @@ Alternatively, a DispatchEvent can be fired inside the producing method to send 
 Copy "conf/jms-rest.yaml.example" to "conf/jms-rest.yaml" and modify below settings:
 	a. Inbound and Outbound MQ setting:
 +-----------+---------------------------+
-|	Setting	|	Description				|
+|	Setting	|	Description	|
 +===========+===========================+
-|	host	|MQ host					|
-|	port	|MQ port					|
-| channel	|MQ channel					|
-| manager	|MQ manager					|
-| queues	|Queue names				|
-| threads	|Number of threads to run	|
+|	host	|MQ host		|
+|	port	|MQ port		|
+| channel	|MQ channel		|
+| manager	|MQ manager		|
+| queues	|Queue names		|
+| threads	|Fixed threads to run	|
 +-----------+---------------------------+
 
 	b. Inbound and Outbound RESTful setting:
 +-----------+---------------------------+
-|	Setting	|	Description				|
+|	Setting	|	Description	|
 +===========+===========================+
-|	scheme	|HTTP scheme				|
-|	server	|RESTful server				|
-| port		|Listen/Pubish port			|
-| context	|RESTful service context	|
+|	scheme	|HTTP scheme		|
+|	server	|RESTful server		|
+| port		|Listen/Pubish port	|
+| context	|RESTful service context|
 +-----------+---------------------------+
 
 2. Run "etc/start-jms-rest.bat" to start as standalone mode.
